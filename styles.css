@@ -1,0 +1,243 @@
+:root {
+    --darkgray: #161616;
+    --lightgray: #6e6e6e;
+}
+
+@font-face {
+    /* for "natual living" */
+    font-family: Nunito Sans Light;
+    src: url(/fonts/Nunito_Sans/NunitoSans-Light.ttf);
+}
+
+@font-face {
+    /* for headers */
+    font-family: Nunito Sans Regular;
+    src: url(/fonts/Nunito_Sans/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+    /* for anything not specified */
+    font-family: Lato Regular;
+    src: url(/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    /* for footer */
+    font-family: Lato Bold;
+    src: url(/fonts/Lato/Lato-Bold.ttf);
+}
+
+body {
+    font-family: Lato Regular;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 0px;
+    margin: 0px;
+    background-color: #2a2a2a;
+}
+
+.treehouse {
+    width: 100vw;
+    height: 400px;
+    background-image: url(img/2010-hus-i-træ.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -300px;
+
+}
+
+#natual-living {
+    font-family: Nunito Sans Light;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: white;
+    margin-left: 50px;
+    font-weight: normal;
+}
+
+.nav-top {
+    margin: 0px;
+    width: 100vw;
+    height: 100px;
+    background-color: var(--darkgray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.nav-top section {
+    margin-right: 50px;
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    /* padding-top: 20px; */
+}
+
+.nav-top section a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    background-color: white;
+    margin: 0px;
+}
+
+main h1 {
+    font-family: Nunito Sans Regular;
+    text-transform: lowercase;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 0px;
+
+}
+section{
+    margin: 0;
+}
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 50px;
+    padding-right: 50px;
+    column-gap: 20px;
+    padding-bottom: 20px;
+}
+
+.about p {
+    color: var(--lightgray);
+}
+
+.houses {
+    background-color: #e1e1e1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 40px;
+    padding-bottom: 0px;
+
+    
+}
+
+.houses article {
+    width: 400px;
+}
+
+.houses article img {
+    width: 400px;
+    height: 300px;
+    margin: 0px;
+}
+
+.houses article div {
+    background-color: white;
+    margin: 0px;
+    padding: 20px;
+    height: 200px;
+
+}
+
+.houses article div h2 {
+    margin: 0px;
+    font-weight: normal;
+    text-transform: uppercase;
+
+}
+
+.houses article div p {
+    color: var(--lightgray);
+    margin: 0;
+}
+
+.houses article div p:nth-of-type(2){
+    margin-top: 20px;
+}
+
+.arrow{
+    width: 80px;
+    height: 40px;
+    background-color: #2a2a2a;
+    clip-path: polygon(50% 0, 100% 100%, 65% 100%, 50% 75%, 35% 100%, 0 100%);
+    grid-column: 1/-1;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+}
+.udvalg{
+    background-image: url(img/5642_Hejrelunden.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    width: 100vw;
+    height: 800px;
+    margin: 0px;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    flex-direction: column;
+    gap: 300px;
+
+}
+.udvalg a{
+    text-decoration: none;
+    color: white;
+}
+.udvalg h2{
+    font-weight: normal;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 600px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    height: 30px;
+
+}
+footer{
+    font-family: Lato Bold;
+    padding-top: 100px;    
+   
+}
+section{
+    display: flex;
+    justify-content: space-around;
+}
+footer section div{
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+}
+footer section div ul{
+    list-style: none;
+}
+footer section div ul li a{
+    text-decoration: underline;
+    color: var(--lightgray);
+}
+footer section div ul li{
+    color: var(--lightgray)
+}
+    
+footer section div li:before{
+    content: "-";
+    padding-right: 10px;
+    color: var(--lightgray);
+}
+footer section div ul:nth-of-type(3) li:nth-of-type(4){
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.icons{
+    width: 130px;
+}
+.icons svg{
+    fill: var(--lightgray);
+    height: 40px;
+
+}
